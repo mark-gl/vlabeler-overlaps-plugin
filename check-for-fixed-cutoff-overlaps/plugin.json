@@ -1,0 +1,28 @@
+{
+  "name": "check-for-fixed-cutoff-overlaps",
+  "version": 1,
+  "type": "macro",
+  "displayedName": {
+    "en": "Check for fixed/cutoff overlaps"
+  },
+  "author": "mark-gl",
+  "description": {
+    "en": "Check for oto entries where the right edge of the fixed area overlaps with the cutoff."
+  },
+  "website": "https://github.com/mark-gl/vlabeler-overlaps-plugin",
+  "supportedLabelFileExtension": "ini",
+  "scope": "Module",
+  "parameters": {
+    "list": [
+      {
+        "name": "addTags",
+        "type": "boolean",
+        "label": {
+          "en": "Add tags to affected entries"
+        },
+        "defaultValue": false
+      }
+    ]
+  },
+  "scriptFiles": ["check-for-fixed-cutoff-overlaps.js"]
+}
