@@ -50,6 +50,8 @@ for (let entry of entries) {
     if (params["addTags"] && !entry.notes.tag.endsWith("⚠")) {
       entry.notes.tag += "⚠";
     }
+  } else if (params["addTags"] && entry.notes.tag.endsWith("⚠")) {
+    entry.notes.tag = entry.notes.tag.slice(0, -1);
   }
 }
 
